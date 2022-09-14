@@ -8,7 +8,7 @@ html, body {
 
 iframe.headerBar{
   width: 90%; /*or any other size*/
-  height: 2%; /*or any other size*/
+  height: 5%; /*or any other size*/
   overflow: hidden;
   text-align: center;
   vertical-align: center;
@@ -20,4 +20,9 @@ iframe.headerBar{
   bottom:0;
   left:0;
   right:0;
+  
+  
+@media screen and (max-width: 500px) {
+  height:10%;
+}
 }
