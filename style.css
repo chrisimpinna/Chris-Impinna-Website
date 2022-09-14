@@ -4,7 +4,6 @@ html, body {
   font-family: monospace;
   text-align: center;
   font-size: 12;
-  align: center;
 }
 
 iframe.headerBar{
@@ -20,13 +19,14 @@ iframe.headerBar{
 }
 
 table, th, td {
+  align: center;
   border: 1px solid black;
   border-collapse: collapse;
   color: black;
   text-align: center;
   vertical-align: center;
-  align:center;
 }
+
 th, td {
   background-color: yellow;
 }
