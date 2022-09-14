@@ -21,6 +21,7 @@ iframe.headerBar{
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
+  color: black;
 }
 th, td {
   background-color: yellow;
