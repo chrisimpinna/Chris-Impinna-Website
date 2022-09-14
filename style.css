@@ -20,9 +20,10 @@ iframe.headerBar{
   bottom:0;
   left:0;
   right:0;
-  
+}
   
 @media screen and (max-width: 500px) {
+  iframe.headerBar{
   height:10%;
-}
+  }
 }
