@@ -31,6 +31,7 @@ iframe.footerBar{
 }
 
 table, th, td {
+  margin: 0px auto;
   align: center;
   border: 1px solid black;
   border-collapse: collapse;
