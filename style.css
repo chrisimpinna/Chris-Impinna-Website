@@ -7,20 +7,14 @@ html, body {
 }
 
 iframe.headerBar{
-  width: 90%; /*or any other size*/
-  height: 5%; /*or any other size*/
   overflow: hidden;
-  text-align: center;
-  vertical-align: center;
-  border:0;
+  width:90%
   position: sticky;
   position: -webkit-sticky;
-  z-index: 999;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
+  top: 0;
 }
+
+
   
 @media screen and (max-width: 500px) {
   iframe.headerBar{
