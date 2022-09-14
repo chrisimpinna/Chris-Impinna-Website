@@ -9,7 +9,7 @@ html, body {
 }
 
 iframe.noScrolling{
-  width: 250px; /*or any other size*/
-  height: 300px; /*or any other size*/
+  width: 100%; /*or any other size*/
+  height: 10%; /*or any other size*/
   overflow: hidden;
 }
