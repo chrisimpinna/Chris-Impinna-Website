@@ -8,14 +8,11 @@ html, body {
   font-size: 12;
 }
 
-iframe.noScrolling{
+iframe.headerBar{
   width: 100%; /*or any other size*/
   height: 10%; /*or any other size*/
   overflow: hidden;
-}
-
-iframe{
-   position: absolute;
-   left: 0;
-   bottom: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
