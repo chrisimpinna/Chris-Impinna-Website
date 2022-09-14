@@ -20,8 +20,10 @@ iframe.headerBar{
 
 iframe.footerBar{
   overflow: hidden;
+  position: sticky;
+  position: -webkit-sticky;
   top: 0;
-  bottom: 0;
+  bottom: 1;
   left: 0;
   right:0;
   width:90%;
