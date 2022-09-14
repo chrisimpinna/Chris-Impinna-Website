@@ -10,7 +10,7 @@ html, body {
 
 iframe.headerBar{
   width: 100%; /*or any other size*/
-  height: 10%; /*or any other size*/
+  height: 3%; /*or any other size*/
   overflow: hidden;
   position:sticky; 
   bottom:0;
