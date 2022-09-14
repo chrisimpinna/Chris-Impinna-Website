@@ -13,5 +13,5 @@ iframe.headerBar{
   height: 10%; /*or any other size*/
   overflow: hidden;
   position:sticky; 
-  top:10;
+  top:-10;
 }
