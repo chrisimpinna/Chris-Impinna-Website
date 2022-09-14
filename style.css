@@ -22,6 +22,8 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   color: black;
+  text-align: center;
+  vertical-align: center;
 }
 th, td {
   background-color: yellow;
