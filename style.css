@@ -22,5 +22,6 @@ iframe.headerBar{
   iframe.headerBar{
     display:block;
     text-align:center;
+    height:10%
   }
 }
