@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_parent">
+<meta name="viewport" content="width=device-width">
+<style>
+body, html { 
+  font-family: monospace;
+  height:100%;
+}
+  
+  a {
+    vertical-align: center;
+    align: center;
+    text-align: center;
+  }
+  
+.header {
+  overflow: hidden;
+  background-color: yellow;
+  height:35%;
+  width: 100%;
+  vertical-align: center;
+}
 
+.header a {
+  display: inline-block;
+  vertical-align: middle;
+  color: black;
+  text-decoration: none;
+  font-size: 18px; 
+  padding: 10px 10px;
+  float: right;
+  height:100%;
+}
+
+.header a.logo {
+  font-size: 25px;
+  color: black;
+  float:left;
+}
+
+@media screen and (max-width: 500px) {
+  .header a{
+    width:100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="footer" style="vertical-align: middle;" height: "100%" width: "100%">
+  <a class="logo">DeepSpace9</a>
+  <a>Contact: deepspace9ix@gmail.com</a>
+</div>
+
+
+</body>
+</html>
