@@ -13,8 +13,12 @@ iframe.headerBar{
   height: 10%; /*or any other size*/
   overflow: hidden;
   text-align: center;
+  vertical-align: center;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   border:0;
+  right: 0;
+  left: 0;
+  z-index: 999;
 }
