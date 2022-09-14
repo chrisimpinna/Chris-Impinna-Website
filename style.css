@@ -9,9 +9,10 @@ html, body {
 }
 
 iframe.headerBar{
-  width: 100%; /*or any other size*/
+  width: 90%; /*or any other size*/
   height: 10%; /*or any other size*/
   overflow: hidden;
+  text-align: center;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
