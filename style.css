@@ -12,6 +12,10 @@ iframe.headerBar{
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  border:0;
 }
 
 
