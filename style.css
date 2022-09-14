@@ -17,8 +17,6 @@ iframe.headerBar{
   width:90%;
   border:0;
 }
-
-
   
 @media screen and (max-width: 500px) {
   iframe.headerBar{
