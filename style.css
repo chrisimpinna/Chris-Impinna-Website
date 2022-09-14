@@ -18,6 +18,16 @@ iframe.headerBar{
   border:0;
 }
 
+iframe.footerBar{
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  width:90%;
+  border:0;
+}
+
 table, th, td {
   align: center;
   border: 1px solid black;
