@@ -7,27 +7,14 @@
 body, html { 
   font-family: monospace;
   height:100%;
-}
-  a {
-    margin:0;
-    z-index: 0;
-  }
-  marquee{
-    margin:0;
-    vertical-align: center;
-    align: center;
-    text-align: center;
-    z-index:-5;
-    width: 100%;
-  }
-  
+}  
   
 .header {
   position: absolute;
   margin:0;
   overflow: hidden;
   background-color: yellow;
-  height:35%;
+  height: 35%;
   width: 100%;
   vertical-align: center;
   z-index: -2;
@@ -62,8 +49,8 @@ body, html {
     margin:0;
     width:100%;
   }
-  .header.hideOnMobile p{
-    display: none;
+  .header{
+    display: block;
   }
 }
 
@@ -72,11 +59,8 @@ body, html {
 <body>
 
 <div class="header" style="vertical-align: middle;" height: "100%" width: "100%">
-  <a href="index.html" class="logo">DeepSpace9 - v0.45</a>
+  <a href="index.html" class="logo">DeepSpace9 - v0.46</a>
   <a href="archive.html">Archive</a>
-  <marquee class="hideOnMobile">
-    <p>Hey! Free shipping on orders over $300k</p>
-  </marquee>
 </div>
 
 
