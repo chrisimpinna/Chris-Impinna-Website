@@ -43,10 +43,3 @@ table, th, td {
 th, td {
   background-color: yellow;
 }
-  
-@media screen and (max-width: 500px) {
-  iframe.headerBar{
-    display:block;
-    text-align:center;
-  }
-}
