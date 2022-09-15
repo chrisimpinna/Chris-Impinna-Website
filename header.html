@@ -17,6 +17,13 @@ body, html {
   z-index: -2;
 }
 
+ marquee {
+   margin:0;
+  font-size: 18px;
+  color: black;
+  float:left;
+  }
+  
 .header a {
   margin:0;
   vertical-align: middle;
@@ -49,6 +56,9 @@ body, html {
   .header{
     display: block;
   }
+  #noMobile{
+    display: none;
+  }
 }
 
 </style>
@@ -56,6 +66,9 @@ body, html {
 <body>
 
 <div class="header" height: "100%" width: "100%">
+  <marquee class = "noMobile">
+    <p>hello there!</p>
+  </marquee>
   <a href="index.html" class="logo">DeepSpace9 - v0.47</a>
   <a href="archive.html">Archive</a>
 </div>
