@@ -10,7 +10,7 @@ body, html {
 }  
   
 .header {
-   display: table;
+  display: inline-block;
   margin:0;
   overflow: hidden;
   background-color: yellow;
@@ -18,19 +18,16 @@ body, html {
   z-index: -2;
   width: 100%;
 }
-
  marquee {
-    display: table;
-   margin:0;
-   algin:center;
+   margin:0 auto;
   font-size: 18px;
   color: black;
    text-align:center;
-   width: 40%;
+   height:100%;
+   width: 50%;
   }
-  
+
 .header a {
-   display: table;
   margin:0;
   vertical-align: middle;
   color: black;
@@ -41,20 +38,16 @@ body, html {
   height:100%;
   background-color: yellow;
 }
-
 .header a.logo {
-   display: table;
   margin:0;
   font-size: 25px;
   color: black;
   float:left;
 }
-
 .header a:hover {
   background-color: #d3d372;
   color: black;
 }
-
 @media screen and (max-width: 500px) {
   .header a{
     margin:0;
@@ -67,19 +60,17 @@ body, html {
     display:none;
   }
 }
-
 </style>
 </head>
 <body>
 
 <div class="header" height: "100%" width: "100%">
-  <a href="index.html" class="logo">DS_IX</a>
-  <marquee>
-    <a class ="logo" class ="noMobile">hello there!</a>
+  <a href="index.html" class="logo">DeepSpace9 - v0.5.4f</a>
+  <a href="index.html" class="logo">DeepSpace9 - v0.5.5f</a>
+  <marquee class = "noMobile">
+    <p>hello there!</p>
   </marquee>
   <a href="archive.html">Archive</a>
 </div>
-
-
 </body>
 </html>
