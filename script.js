@@ -1,5 +1,4 @@
 function printRepoCount() {
-  last-updated
   var responseObj = JSON.parse(this.commit.committer.date);
   document.getElementById("last-updated").innerHTML = "NEW COMMIT" + responseObj;
 }
