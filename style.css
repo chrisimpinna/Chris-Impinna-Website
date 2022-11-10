@@ -1,6 +1,6 @@
 html, body {
-  background-color: black;
-  color: yellow;
+  background-color: 556b2f;
+  color: white;
   font-family: monospace;
   text-align: center;
   font-size: 12;
@@ -38,11 +38,11 @@ table, th, td {
   align: center;
   border: 1px solid black;
   border-collapse: collapse;
-  color: black;
+  color: white;
   text-align: center;
   vertical-align: center;
 }
 
 th, td {
-  background-color: yellow;
+  background-color: 556b2f;
 }
