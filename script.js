@@ -1,8 +1,9 @@
 function printRepoCount() {
-  var responseObj = JSON.parse(this.responseText);
-  console.log(responseObj.name + " has " + responseObj.public_repos + " public repositories!");
+  last-updated
+  var responseObj = JSON.parse(this.commit.committer.date);
+  document.getElementById("last-updated").innerHTML = "NEW COMMIT" + responseObj;
 }
 var request = new XMLHttpRequest();
 request.onload = printRepoCount;
-request.open('get', 'https://api.github.com/users/deepspaceIX', true)
+request.open('get', 'https://api.github.com/repos/USER/REPOSITORY/commits', true)
 request.send()
