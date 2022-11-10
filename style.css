@@ -1,6 +1,6 @@
 html, body {
   background-color: black;
-  color: 556b2f;
+  color: white;
   font-family: monospace;
   text-align: center;
   font-size: 12;
@@ -36,6 +36,7 @@ iframe.footerBar{
 table, th, td {
   margin: 0px auto;
   align: center;
+  background-color: #556b2f
   border: 1px solid black;
   border-collapse: collapse;
   color: white;
@@ -44,5 +45,6 @@ table, th, td {
 }
 
 th, td {
-  background-color: 556b2f;
+  background-color: #556b2f;
+  color: white;
 }
