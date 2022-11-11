@@ -49,13 +49,14 @@ body, html {
 </style>
   <script src = "script.js"></script>
   <script> 
-      document.getElementById("last-updated").innerHTML = "NEW COMMIT";
+      var Element = document.getElementsByClassName("last-updated");
+      Element.innerHTML = "NEW COMMIT";
   </script
 </head>
 <body>
 
 <div class="header" style="vertical-align: middle;" height: "100%" width: "100%">
-  <a id = "last-updated"> Last updated</a>
+  <a class = "last-updated"> Last updated</a>
   <a class="logo">DeepSpace9</a>
   <a>Contact: deepspace9ix@gmail.com</a>
 </div>
