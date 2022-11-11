@@ -50,7 +50,8 @@ body, html {
   
 <script>
   document.onload = function(){
-    document.getElementsByClassName("last-updated").innerHTML = "GeeksforGeeks";
+    var Element = document.getElementsByClassName("last-updated");
+    Element[0].innerHTML = "GeeksforGeeks";
   };
 </script>
 </head>
