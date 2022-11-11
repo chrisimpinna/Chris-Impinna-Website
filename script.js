@@ -7,4 +7,5 @@ window.addEventListener("load", function () {
   request.onload = printRepoCount();
   request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits', true)
   request.send()
+  document.getElementsByClassName("last-updated").innerHTML = "GeeksforGeeks";
 });
