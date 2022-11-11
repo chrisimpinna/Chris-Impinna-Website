@@ -1,7 +1,6 @@
 window.addEventListener("load", function () {
   function printRepoCount() {
-    var Element = document.getElementsByClassName("last-updated");
-    Element[0].innerHTML = "GeeksforGeeks";
+    document.getElementsByClassName("last-updated").innerHTML = "GeeksforGeeks";
   }
   
   var request = new XMLHttpRequest();
