@@ -5,6 +5,6 @@ window.addEventListener("load", function () {
   
   var request = new XMLHttpRequest();
   request.onload = printRepoCount();
-  request.open('get', 'https://api.github.com/repos/USER/REPOSITORY/commits', true)
+  request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits', true)
   request.send()
 });
