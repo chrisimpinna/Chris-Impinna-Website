@@ -2,7 +2,6 @@
 <html>
 <head>
   <base target="_parent">
-  <script src = "script.js"></script>
 <meta name="viewport" content="width=device-width">
 <style>
 body, html { 
@@ -53,7 +52,8 @@ body, html {
   document.onload = function(){
     document.getElementById("updated").textContent="newContent";
   };
-  document.getElementById("updated").innerHTML = "AHAHHH";
+  var element = document.getElementById("updated");
+  element[0].innerHTML = "AHAHHH";
 </script>
 </head>
 <body>
