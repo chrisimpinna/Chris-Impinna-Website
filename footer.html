@@ -49,17 +49,14 @@ body, html {
 </style>
   
 <script>
-  document.onload = function(){
-    document.getElementById("updated").textContent="newContent";
-  };
-  var element = document.getElementById("updated");
-  element[0].innerHTML = "AHAHHH";
+  document.onload = function(){};
+  document.getElementByClass("updated").innerHTML = "AHAHHH";;
 </script>
 </head>
 <body>
 
 <div class="header" style="vertical-align: middle;" height: "100%" width: "100%">
-  <a id = "updated">Last updated</a>
+  <a class="update">Last updated</a>
   <a class="logo">DeepSpace9</a>
   <a>Contact: deepspace9ix@gmail.com</a>
 </div>
