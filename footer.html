@@ -50,15 +50,14 @@ body, html {
   
 <script>
   document.onload = function(){
-    var Element = document.getElementsByClassName("last-updated");
-    Element[0].innerHTML = "GeeksforGeeks";
+    document.getElementById(“updated”).innerHTML = “New text!”;
   };
 </script>
 </head>
 <body>
 
 <div class="header" style="vertical-align: middle;" height: "100%" width: "100%">
-  <a class = "last-updated"> Last updated</a>
+  <a id = "updated">Last updated</a>
   <a class="logo">DeepSpace9</a>
   <a>Contact: deepspace9ix@gmail.com</a>
 </div>
