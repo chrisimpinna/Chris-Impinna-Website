@@ -51,7 +51,7 @@ tr:nth-child(even) {
   background-color: #7F9160;
 }
 
-.archive-tr-title{
+.archive-tr-title th{
   background-color: #303D1A;
 }
 
