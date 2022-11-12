@@ -63,9 +63,9 @@ body, html {
     var xmlhttp = new XMLHttpRequest();
     var url = "https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits";
 
-    xmlhttp.open("GET", url, true);
+    var json = xmlhttp.open("GET", url, true);
     xmlhttp.send();
-
+    console.log(json.commit.committer.date);
   };
 </script>
 </body>
