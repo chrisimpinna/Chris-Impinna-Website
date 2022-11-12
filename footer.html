@@ -59,13 +59,15 @@ body, html {
 <script>
   document.onload = function(){};
   
-  var newString;
-  //let x = 0;
+  let newString;
   
   function getUpdateDate() {
-    var responseReceived = this.responseText;
-    newString[0] = responseReceived[responseReceived.search("date")];
-    document.getElementById("update").innerHTML = newString; 
+    let responseReceived = this.responseText;
+    for (let i = responseReceived.search("date"); i<= responseReceived.length; i++){
+      //newString[0] = ;
+      document.getElementById("update").innerHTML = responseReceived[i]; 
+    };
+    
   };
   
   var request = new XMLHttpRequest();
