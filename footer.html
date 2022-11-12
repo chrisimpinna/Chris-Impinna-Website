@@ -72,12 +72,11 @@ body, html {
               if (responseReceived[i+5] == ":"){
                 
                 for (let e = i+9; e<=i+40; e++) {
-                  if (stop == 0 && responseReceived[i] != "T") {
-                    newString = responseReceived[i];
+                  if (stop == 0 && responseReceived[i] != "Z") {
+                    newString = newString+responseReceived[i];
                   } else {
                     stop = 1;
                   };
-                  
                 };
               };
             };
