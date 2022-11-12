@@ -10,10 +10,13 @@ img {
   border-radius: 20px;
 }
 
-iframe.headerBar{
-  overflow: hidden;
+.headerBar{
   width:90%;
   height: 15%;
+}
+
+iframe.headerBar{
+  overflow: hidden;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
