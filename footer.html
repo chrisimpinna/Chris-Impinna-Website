@@ -60,7 +60,7 @@ body, html {
   document.onload = function(){};
 
   function getUpdateTime(r) {
-    var requestResponse = JSON.parse(r);
+    var requestResponse = r.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits', true);
     document.getElementById("update").innerHTML = requestResponse;
   }
   
