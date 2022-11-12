@@ -38,7 +38,7 @@ function getArchiveFiles() {
   };
   
   if (document.getElementById("archive-title") != null) {
-    document.getElementById("archive-title").innerHTML = responseReceived; 
+    document.getElementById("archive-title").innerHTML = fileName; 
   };    
 };
  
