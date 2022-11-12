@@ -57,17 +57,20 @@ body, html {
   <a>Contact: deepspace9ix@gmail.com</a>
 </div>
 <script>
-  document.onload = function(){
-    
-  };
-  document.getElementById("update").innerHTML ="Welcome to GeeksforGeeks";
-    
-  var xmlhttp = new XMLHttpRequest();
+  document.onload = function(){};
+  
+  document.getElementById("update").innerHTML = "Welcome to GeeksforGeeks";
+
   var url = "https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits";
 
-  xmlhttp.open("GET", url, true);
-  var jsonBurger = xmlhttp.send();
-  console.log(jsonBurger.commit.committer.date);
+  function printRepoCount() {
+    document.getElementById("update").innerHTML = "Welcome to GeeksforGeeks 2222";
+  }
+  document.getElementsByClassName("last-updated").innerHTML = "GeeksforGeeks";
+  var request = new XMLHttpRequest();
+  request.onload = printRepoCount();
+  request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits', true)
+  request.send()
 </script>
 </body>
 </html>
