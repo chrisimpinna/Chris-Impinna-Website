@@ -49,10 +49,19 @@ function getArchiveFiles() {
   fileName = fileName.replace(/"/g, ",");
 
   if (document.getElementById("archive-table") != null) {
-    let element = document.createElement("TR");
+    let TR = document.createElement("TR");
+    let TR_Title = document.createElement("TH");
+    TR_Title.innerHTML = "Title";
+    let TR_FileType = document.createElement("TH");
+    TR_FileType.innerHTML = "Cheeseburger";
+    let TR_Date = document.createElement("TH");
+    TR_Date.innerHTML = "1/1/1";
 
     // Append the element to the parent element
-    document.querySelector('#archive-table tbody').append(element);
+    document.querySelector('#archive-table tbody').append(TR);
+    TR.append(TR_Title);
+    TR.append(TR_FileType);
+    TR.append(TR_Date);
   };   
   
   if (document.getElementById("archive-title") != null) {
