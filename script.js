@@ -52,7 +52,7 @@ function getArchiveFiles() {
     let element = document.createElement("TR");
 
     // Append the element to the parent element
-    document.getElementById("archive-table").tbody.append(element);
+    document.querySelector('#archive-table tbody').append(element);
   };   
   
   if (document.getElementById("archive-title") != null) {
