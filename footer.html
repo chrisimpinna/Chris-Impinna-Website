@@ -58,7 +58,7 @@ body, html {
 </div>
 <script>
   document.onload = function(){};
-  let newString = "";
+  let newString = "      ";
   let x = 0;
   function getUpdateDate() {
     var responseReceived = this.responseText;
@@ -67,12 +67,12 @@ body, html {
         if (responseReceived[i+1] == "a"){
           if (responseReceived[i+2] == "t"){
             if (responseReceived[i+3] == "e"){
-              newString[0] = responseReceived[i+9];
-              newString[1] = responseReceived[i+10];
-              newString[2] = responseReceived[i+11];
-              newString[3] = responseReceived[i+12];
-              newString[4] = responseReceived[i+13];
-              newString[5] = responseReceived[i+14];
+              newString[0] = responseReceived[i];
+              newString[1] = responseReceived[i+1];
+              newString[2] = responseReceived[i+2];
+              newString[3] = responseReceived[i+3];
+              newString[4] = responseReceived[i+4];
+              newString[5] = responseReceived[i+5];
               
               /*
               for (let e=i+8; e<responseReceived.length; e++) {
