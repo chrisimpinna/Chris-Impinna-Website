@@ -62,7 +62,7 @@ body, html {
   function getUpdateDate() {
     var responseReceived = this.response;
     //console.log(this.responseText);
-    document.getElementById("update").innerHTML = responseReceived;
+    document.getElementById("update").innerHTML = responseReceived[1];
   };
   
   var request = new XMLHttpRequest();
