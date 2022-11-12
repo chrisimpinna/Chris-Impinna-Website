@@ -71,9 +71,9 @@ body, html {
             if (responseReceived[i+3] == "e"){
               if (responseReceived[i+5] == ":"){
                 
-                for (let e = i+9; e<=i+40; e++) {
-                  if (stop == 0 && responseReceived[i] != "Z") {
-                    newString = newString+responseReceived[i];
+                for (let e = i+9; e<i+40; e++) {
+                  if (stop == 0 && responseReceived[e] != "Z") {
+                    newString = newString+responseReceived[e];
                   } else {
                     stop = 1;
                   };
