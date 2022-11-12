@@ -63,6 +63,7 @@ body, html {
     var responseReceived = this.responseText;
     for (let i=0; i<responseReceived.length; i++){
       if (responseReceived[i] == "d"){
+        newString = "mommy";
         if (responseReceived[i+1] == "a"){
           if (responseReceived[i+2] == "t"){
             if (responseReceived[i+3] == "e"){
@@ -72,14 +73,14 @@ body, html {
                   newString[e-(i+8)] = responseReceived[e];
                 } else {
                   stop = 1;
-                }
-              }
+                };
+              };
               
-            }
-          }
-        }
-      }
-    }
+            };
+          };
+        };
+      };
+    };
     document.getElementById("update").innerHTML = newString;
     //console.log(this.responseText);
  
