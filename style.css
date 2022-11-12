@@ -11,8 +11,8 @@ img {
 }
 
 .headerBar{
+  height:50px;
   width:50%;
-  height:15%;
 }
 
 iframe.headerBar{
