@@ -15,7 +15,9 @@ function getUpdateDate() {
   };
 
   newString = newString.replace("T", " ")
-  document.getElementById("update").innerHTML = newString + " (GMT)"; 
+  if (document.getElementById("update") != null) {
+    document.getElementById("update").innerHTML = newString + " (GMT)"; 
+  };    
 };
 
 var request = new XMLHttpRequest();
