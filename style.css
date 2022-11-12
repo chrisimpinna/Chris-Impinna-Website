@@ -44,9 +44,17 @@ table {
 }
 
 tr:nth-child(odd){
-  background-color: #556b2f
+  background-color: #556b2f;
 }
 
 tr:nth-child(even) {
   background-color: #7F9160;
+}
+
+.archive-tr-title{
+  background-color: #303D1A;
+}
+
+.archive-table a {
+  color: white;
 }
