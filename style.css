@@ -36,6 +36,7 @@ iframe.footerBar{
 
 table {
   margin: 0px auto;
+  width: 40%;
   border-collapse: collapse;
   text-align: center;
   vertical-align: center;
