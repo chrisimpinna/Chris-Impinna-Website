@@ -58,10 +58,12 @@ body, html {
 </div>
 <script>
   document.onload = function(){};
+  /*
   var newString;
   let x = 0;
+  */
   function getUpdateDate() {
-    var responseReceived = this.responseText;
+    //var responseReceived = this.responseText;
     //newString[0] = responseReceived[responseReceived.indexOf("date")+2];
     document.getElementById("update").innerHTML = this.responseText; 
   };
