@@ -3,6 +3,12 @@
 <head>
   <base target="_parent">
   <meta name="viewport" content="width=device-width">
+  
+  <title>DS-IX</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src = "script.js"></script>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  
   <style>
     body, html { 
       font-family: monospace;
@@ -56,30 +62,7 @@
     <a>Contact: deepspace9ix@gmail.com</a>
   </div>
   <script>
-    document.onload = function(){};
-
-    let newString = "Last updated: ";
-
-    function getUpdateDate() {
-      let stop = 0;
-      var responseReceived = this.responseText;
-      let i = responseReceived.indexOf("date\":")
-      for (let e = i+10; e<i+40; e++) {
-        if (stop == 0 && responseReceived[e] != "Z") {
-          newString = newString+responseReceived[e];
-        } else {
-          stop = 1;
-        };
-      };
-
-      newString = newString.replace("T", " ")
-      document.getElementById("update").innerHTML = newString + " (GMT)"; 
-    };
-
-    var request = new XMLHttpRequest();
-    request.onload = getUpdateDate;
-    request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits', true);
-    request.send();
+    
   </script>
 </body>
 </html>
