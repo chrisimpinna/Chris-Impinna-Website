@@ -59,7 +59,7 @@ body, html {
 <script>
   document.onload = function(){};
   
-  var newString = "a b c d e f g h i";
+  let newString = "a b c d e f g h i";
 
   function getUpdateDate() {
     var responseReceived = this.responseText;
@@ -69,6 +69,7 @@ body, html {
           if (responseReceived[i+2] == "t"){
             if (responseReceived[i+3] == "e"){
               newString.replace('a', responseReceived[i]);
+              console.log("help me god");
             };
           };
         };
