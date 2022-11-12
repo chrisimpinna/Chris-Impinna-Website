@@ -44,3 +44,11 @@ table, th, td {
   text-align: center;
   vertical-align: center;
 }
+
+th.a{
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #7F9160;
+}
