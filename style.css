@@ -34,19 +34,17 @@ iframe.footerBar{
   border:0;
 }
 
-table, th, td {
+table {
   margin: 0px auto;
-  align: center;
-  background-color: #556b2f;
   border-collapse: collapse;
-  border: white;
-  color: white;
   text-align: center;
   vertical-align: center;
+  align: center;
+  color: white;
 }
 
-th.a{
-  color: white;
+tr:nth-child(odd){
+  background-color: #556b2f
 }
 
 tr:nth-child(even) {
