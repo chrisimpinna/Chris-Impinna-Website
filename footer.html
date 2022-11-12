@@ -59,8 +59,8 @@ body, html {
 <script>
   document.onload = function(){};
   
-  var newString = "shut up you stupid tihng";
-  let x = 0;
+  var newString = "a b c d e f g h i";
+
   function getUpdateDate() {
     var responseReceived = this.responseText;
     for (let i=0; i<responseReceived.length; i++){
@@ -68,24 +68,10 @@ body, html {
         if (responseReceived[i+1] == "a"){
           if (responseReceived[i+2] == "t"){
             if (responseReceived[i+3] == "e"){
-              newString[0] = responseReceived[i];
-              newString[1] = responseReceived[i+1];
-              newString[2] = responseReceived[i+2];
-              newString[3] = responseReceived[i+3];
-              newString[4] = responseReceived[i+4];
-              newString[5] = responseReceived[i+5];
-              
-              /*
-              for (let e=i+8; e<responseReceived.length; e++) {
-                if (responseReceived[e] != "T" && stop==0){
-                  x++;
-                  newString[x] = responseReceived[e];
-                } else {
-                  stop = 1;
-                };
-              };
-              */
-              
+              newString.replace("a", responseReceived[i]);
+              newString.replace("b", responseReceived[i+1]);
+              newString.replace("c", responseReceived[i+2]);
+              newString.replace("d", responseReceived[i+3]);
             };
           };
         };
