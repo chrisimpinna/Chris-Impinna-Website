@@ -13,9 +13,6 @@ img {
 .headerBar{
   height:60px;
   width:90%;
-}
-
-.headerBar{
   overflow: hidden;
   position: sticky;
   position: -webkit-sticky;
@@ -69,5 +66,13 @@ img {
   .headerBar{
     height:300px;
     width:90%;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    border:0;
   }
 }
