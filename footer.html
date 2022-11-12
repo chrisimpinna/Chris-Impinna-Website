@@ -60,7 +60,7 @@ body, html {
   document.onload = function(){};
   
   function getUpdateDate() {
-    var responseReceived = this.responseText[10];
+    var responseReceived = this.responseText;
     //console.log(this.responseText);
     document.getElementById("update").innerHTML = responseReceived;
   };
