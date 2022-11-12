@@ -46,7 +46,7 @@ function getArchiveFiles() {
     };
   };
   
-  fileName = fileName.replace("\"", ",");
+  fileName = fileName.replace(/"/g, ",");
   if (document.getElementById("archive-title") != null) {
     document.getElementById("archive-title").innerHTML = fileName; 
   };    
