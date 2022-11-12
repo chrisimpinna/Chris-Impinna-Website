@@ -65,8 +65,8 @@ body, html {
   var xmlhttp = new XMLHttpRequest();
   var url = "https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits";
 
-  var jsonBurger = xmlhttp.open("GET", url, true);
-  xmlhttp.send();
+  xmlhttp.open("GET", url, true);
+  var jsonBurger = xmlhttp.send();
   console.log(jsonBurger.commit.committer.date);
 </script>
 </body>
