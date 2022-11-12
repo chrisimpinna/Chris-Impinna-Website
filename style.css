@@ -9,6 +9,7 @@ html, body {
 img {
   border-radius: 20px;
 }
+
 iframe.headerBar{
   overflow: hidden;
   position: sticky;
@@ -36,15 +37,10 @@ iframe.footerBar{
 table, th, td {
   margin: 0px auto;
   align: center;
-  background-color: #556b2f
+  background-color: #556b2f;
   border-collapse: collapse;
+  border: white;
   color: white;
   text-align: center;
   vertical-align: center;
-}
-
-th, td {
-  background-color: #556b2f;
-  border:white;
-  color: white;
 }
