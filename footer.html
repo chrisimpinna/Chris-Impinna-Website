@@ -59,13 +59,13 @@ body, html {
 <script>
   document.onload = function(){};
 
-  function getUpdateTime(r) {
-    var requestResponse = r.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website', true);
+  function getUpdateTime() {
+    var requestResponse = request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website', true);
     document.getElementById("update").innerHTML = requestResponse;
   }
   
   var request = new XMLHttpRequest();
-  request.onload = getUpdateTime(request);
+  request.onload = getUpdateTime();
   request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits', true)
   request.send()
 </script>
