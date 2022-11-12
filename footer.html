@@ -67,8 +67,8 @@ body, html {
         if (responseReceived[i+1] == "a"){
           if (responseReceived[i+2] == "t"){
             if (responseReceived[i+3] == "e"){
-              let stop = 0;
-              
+              newString[0] = responseReceived[i+8];
+              /*
               for (let e=i+8; e<responseReceived.length; e++) {
                 if (responseReceived[e] != "T" && stop==0){
                   x++;
@@ -77,13 +77,14 @@ body, html {
                   stop = 1;
                 };
               };
+              */
               
             };
           };
         };
       };
     };
-    document.getElementById("update").innerHTML = x + this.responseText; 
+    document.getElementById("update").innerHTML = newString + this.responseText; 
   };
   
   var request = new XMLHttpRequest();
