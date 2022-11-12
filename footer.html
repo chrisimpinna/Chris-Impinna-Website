@@ -61,8 +61,7 @@ body, html {
   var newString;
   let x = 0;
   function getUpdateDate() {
-    var responseReceived = this.responseText;
-    newString[0] = responseReceived[responseReceived.indexOf("date")+2];
+    
     /*
     for (var i=responseReceived.indexOf("date"); i<responseReceived.length; i++){
               newString[0] = responseReceived[i];
@@ -85,8 +84,9 @@ body, html {
           */    
     }
   
-    
-    document.getElementById("update").innerHTML = newString + this.responseText; 
+    var responseReceived = this.responseText;
+    newString[0] = responseReceived[responseReceived.indexOf("date")+2];
+    document.getElementById("update").innerHTML = this.responseText; 
   };
   
   var request = new XMLHttpRequest();
