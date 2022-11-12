@@ -59,6 +59,7 @@ body, html {
 <script>
   document.onload = function(){};
   let newString = "";
+  let x = -1;
   function getUpdateDate() {
     var responseReceived = this.responseText;
     for (let i=0; i<responseReceived.length; i++){
@@ -67,7 +68,7 @@ body, html {
           if (responseReceived[i+2] == "t"){
             if (responseReceived[i+3] == "e"){
               let stop = 0;
-              let x = -1;
+              
               for (let e=i+8; e<responseReceived.length; e++) {
                 if (responseReceived[e] != '\"' && stop==0){
                   x++;
@@ -82,7 +83,7 @@ body, html {
         };
       };
     };
-    document.getElementById("update").innerHTML = newString; 
+    document.getElementById("update").innerHTML = x; 
   };
   
   var request = new XMLHttpRequest();
