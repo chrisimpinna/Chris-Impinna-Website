@@ -62,6 +62,7 @@ body, html {
   let newString = "Last updated: ";
 
   function getUpdateDate() {
+    let stop = 0;
     var responseReceived = this.responseText;
     for (let i=0; i<responseReceived.length; i++){
       if (responseReceived[i] == "d"){
@@ -69,13 +70,12 @@ body, html {
           if (responseReceived[i+2] == "t"){
             if (responseReceived[i+3] == "e"){
               if (responseReceived[i+5] == ":"){
-                let stop = 0;
+                
                 for (let e = i+8; e<=responseReceived.length; e++) {
-                  if (stop == 0 && responseReceived[i] != 'T') {
+                  if (stop == 0 && responseReceived[i] != "T") {
                     newString = responseReceived[i];
                   } else {
                     stop = 1;
-                    break;
                   };
                   
                 };
