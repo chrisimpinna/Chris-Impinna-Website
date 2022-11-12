@@ -12,10 +12,10 @@ img {
 
 .headerBar{
   height:60px;
-  width:50%;
+  width:90%;
 }
 
-iframe.headerBar{
+.headerBar{
   overflow: hidden;
   position: sticky;
   position: -webkit-sticky;
@@ -26,7 +26,7 @@ iframe.headerBar{
   border:0;
 }
 
-iframe.footerBar{
+.footerBar{
   margin:0;
   overflow: hidden;
   position: sticky;
