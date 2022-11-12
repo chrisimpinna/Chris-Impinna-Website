@@ -70,7 +70,7 @@ body, html {
               let stop = 0;
               
               for (let e=i+8; e<responseReceived.length; e++) {
-                if (responseReceived[e] != 'Z' && stop==0){
+                if (responseReceived[e] != "T" && stop==0){
                   x++;
                   newString[x] = responseReceived[e];
                 } else {
@@ -83,7 +83,7 @@ body, html {
         };
       };
     };
-    document.getElementById("update").innerHTML = this.responseText; 
+    document.getElementById("update").innerHTML = x + this.responseText; 
   };
   
   var request = new XMLHttpRequest();
