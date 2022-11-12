@@ -27,20 +27,18 @@ function getArchiveFiles() {
   
   let e = 0;
   
-  let stop = 0;
-  for (let x = responseReceived.indexOf("path\":"); x<=responseReceived.length; x++) {
-    if (responseReceived[x] != "," && stop==0) {
-      fileName = fileName + responseReceived[x];
-    } else {
-      stop = 1;
+  let lastIndex = 0;
+  for (let i = 0; i<=100; i++){
+    let stop = 0;
+    for (let x = responseReceived.indexOf("path\":", lastIndex-2); x<=responseReceived.length; x++) {
+      if (responseReceived[x] != "," && stop==0) {
+        fileName = fileName + responseReceived[x];
+        lastIndex = x
+      } else {
+        stop = 1;
+      };
     };
   };
-  
-  /*
-  for (let i = responseReceived.indexOf("path\":"); i<=responseReceived.length; i++){
-
-  };
-  */
   
   if (document.getElementById("archive-title") != null) {
     document.getElementById("archive-title").innerHTML = fileName; 
