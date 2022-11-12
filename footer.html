@@ -59,7 +59,7 @@ body, html {
 <script>
   document.onload = function(){};
   
-  let newString = "a b c d e f g h i";
+  let newString = "Last updated: ";
 
   function getUpdateDate() {
     var responseReceived = this.responseText;
@@ -69,7 +69,15 @@ body, html {
           if (responseReceived[i+2] == "t"){
             if (responseReceived[i+3] == "e"){
               if (responseReceived[i+5] == ":"){
-                  newString = responseReceived[i+4] + responseReceived[i+5] + responseReceived[i+6] + responseReceived[i+7] + responseReceived[i+8] + responseReceived[i+9];
+                let stop = 0;
+                for (let e = i+8; e<=responseReceived.length; e++) {
+                  if (stop == 0 && responseReceived[i] != 'T') {
+                    newString = newString + responseReceived[i];
+                  } else {
+                    stop = 1;
+                  };
+                  
+                };
               };
             };
           };
