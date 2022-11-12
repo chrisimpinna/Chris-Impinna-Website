@@ -34,7 +34,7 @@ iframe.footerBar{
   border:0;
 }
 
-.archive-table table {
+.archive-table{
   margin: 0px auto;
   width: 40%;
   height: 400px;
@@ -45,11 +45,11 @@ iframe.footerBar{
   color: white;
 }
 
-archive-table tr:nth-child(odd){
+.archive-table tr:nth-child(odd){
   background-color: #556b2f;
 }
 
-archive-table tr:nth-child(even) {
+.archive-table tr:nth-child(even) {
   background-color: #7F9160;
 }
 
