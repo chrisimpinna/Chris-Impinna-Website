@@ -64,11 +64,14 @@ body, html {
     document.getElementById("update").innerHTML = this.responseText;
   }
   
-  var request = new XMLHttpRequest();
-  request.onload = getUpdateTime();
-  request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits', true);
-  request.send();
+  function dumpResponse() {
+    console.log(this.responseText);
+  }
   
+  var request = new XMLHttpRequest();
+  request.onload = dumpResponse;
+  request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website', true)
+  request.send()
 </script>
 </body>
 </html>
