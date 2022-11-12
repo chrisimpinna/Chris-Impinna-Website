@@ -72,30 +72,8 @@ body, html {
         stop = 1;
       };
     };
-    /*
-    for (let i=0; i<responseReceived.length; i++){
-      if (responseReceived[i] == "d"){
-        if (responseReceived[i+1] == "a"){
-          if (responseReceived[i+2] == "t"){
-            if (responseReceived[i+3] == "e"){
-              if (responseReceived[i+5] == ":"){
-                
-                for (let e = i+10; e<i+40; e++) {
-                  if (stop == 0 && responseReceived[e] != "Z") {
-                    newString = newString+responseReceived[e];
-                  } else {
-                    stop = 1;
-                  };
-                };
-              };
-            };
-          };
-        };
-      };
-    };
-    */
+    
     newString = newString.replace("T", " ")
-    //document.getElementById("update").innerHTML = newString + " (GMT)"; 
     document.getElementById("update").innerHTML = newString + " (GMT)"; 
   };
   
