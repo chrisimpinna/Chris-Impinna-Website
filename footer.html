@@ -61,27 +61,6 @@ body, html {
   var newString;
   let x = 0;
   function getUpdateDate() {
-    
-    /*
-    for (var i=responseReceived.indexOf("date"); i<responseReceived.length; i++){
-              newString[0] = responseReceived[i];
-              newString[1] = responseReceived[i+1];
-              newString[2] = responseReceived[i+2];
-              newString[3] = responseReceived[i+3];
-              newString[4] = responseReceived[i+4];
-              newString[5] = responseReceived[i+5];
-              
-              for (let e=i+8; e<responseReceived.length; e++) {
-                if (responseReceived[e] != "T" && stop==0){
-                  x++;
-                  newString[x] = responseReceived[e];
-                } else {
-                  stop = 1;
-                };
-              };
-          */    
-    }
-  
     var responseReceived = this.responseText;
     //newString[0] = responseReceived[responseReceived.indexOf("date")+2];
     document.getElementById("update").innerHTML = this.responseText; 
