@@ -63,9 +63,9 @@ body, html {
   let x = 0;
   */
   function getUpdateDate() {
-    //var responseReceived = this.responseText;
-    //newString[0] = responseReceived[responseReceived.indexOf("date")+2];
-    document.getElementById("update").innerHTML = this.responseText; 
+    var responseReceived = this.responseText;
+    newString[0] = responseReceived[responseReceived.indexOf("date")];
+    document.getElementById("update").innerHTML = newString; 
   };
   
   var request = new XMLHttpRequest();
