@@ -60,7 +60,7 @@ body, html {
   document.onload = function(){};
 
   function getUpdateTime() {
-    document.getElementById("update").innerHTML = request;
+    document.getElementById("update").innerHTML = request.content;
   }
   
   var request = new XMLHttpRequest();
