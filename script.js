@@ -26,7 +26,7 @@ function getArchiveFiles() {
   let fileName = "";
   
   let e = 0;
-  for (let i = "path\":"; i<=responseReceived.length; i++){
+  for (let i = responseReceived.indexOf("path\":"); i<=responseReceived.length; i++){
     let stop = 0;
     for (let x = i; x<=responseReceived.length; x++) {
       if (responseReceived[x] != "," && stop==0) {
