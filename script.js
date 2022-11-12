@@ -28,10 +28,11 @@ function getArchiveFiles() {
   let e = 0;
   
   let lastIndex = 0;
+  let superStop = 0;
   for (let i = 0; i<=100; i++){
     let stop = 0;
-    let superStop = 0
-    if (responseReceived.indexOf("path\":", lastIndex-2) != undefined && superStop == 0) {
+    
+    if (responseReceived.indexOf("path\":", lastIndex) != null && superStop == 0) {
       for (let x = responseReceived.indexOf("path\":", lastIndex-2); x<=responseReceived.length; x++) {
         if (responseReceived[x] != "," && stop==0) {
           fileName = fileName + responseReceived[x];
