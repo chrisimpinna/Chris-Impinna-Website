@@ -20,6 +20,7 @@ iframe.headerBar{
   right:0;
   width:90%;
   border:0;
+  height: 5%;
 }
 
 iframe.footerBar{
