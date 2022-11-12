@@ -65,8 +65,11 @@ body, html {
       if (responseReceived[i] == "d"){
         newString = "mommy";
         if (responseReceived[i+1] == "a"){
+          newString = "1";
           if (responseReceived[i+2] == "t"){
+            newString = "2";
             if (responseReceived[i+3] == "e"){
+              newString = "3";
               let stop = 0;
               for (let e=i+8; e<responseReceived.length; e++) {
                 if (responseReceived[e] != "Z" && stop==0){
