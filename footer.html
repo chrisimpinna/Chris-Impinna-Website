@@ -61,12 +61,12 @@ body, html {
   
   function dumpResponse() {
     console.log(this.responseText);
-    document.getElementById("update").innerHTML = this.responseText;
+    document.getElementById("update").innerHTML = this.responseText.date;
   }
   
   var request = new XMLHttpRequest();
   request.onload = dumpResponse;
-  request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits/date', true)
+  request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits', true)
   request.send()
 </script>
 </body>
