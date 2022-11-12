@@ -2,85 +2,84 @@
 <html>
 <head>
   <base target="_parent">
-<meta name="viewport" content="width=device-width">
-<style>
-body, html { 
-  font-family: monospace;
-  height:100%;
-}
-  
-  a {
+  <meta name="viewport" content="width=device-width">
+  <style>
+    body, html { 
+      font-family: monospace;
+      height:100%;
+    }
+
+    a {
+      vertical-align: center;
+      align: center;
+      text-align: center;
+    }
+
+  .header {
+    overflow: hidden;
+    background-color: #556b2f;
+    height:35%;
+    width: 100%;
     vertical-align: center;
-    align: center;
-    text-align: center;
   }
-  
-.header {
-  overflow: hidden;
-  background-color: #556b2f;
-  height:35%;
-  width: 100%;
-  vertical-align: center;
-}
 
-.header a {
-  display: inline-block;
-  vertical-align: middle;
-  color: white;
-  text-decoration: none;
-  font-size: 18px; 
-  padding: 10px 10px;
-  float: right;
-  height:100%;
-}
-
-.header a.logo {
-  font-size: 25px;
-  color: white;
-  float:left;
-}
-
-@media screen and (max-width: 500px) {
-  .header a{
-    width:100%;
+  .header a {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+    font-size: 18px; 
+    padding: 10px 10px;
+    float: right;
+    height:100%;
   }
-}
 
-</style>
+  .header a.logo {
+    font-size: 25px;
+    color: white;
+    float:left;
+  }
+
+  @media screen and (max-width: 500px) {
+    .header a{
+      width:100%;
+    }
+  }
+
+  </style>
 
 </head>
 <body>
+  <div class="header" style="vertical-align: middle;" height: "100%" width: "100%">
+    <strong><a id="update">Last updated: 404</a></strong>
+    <a class="logo">DeepSpace9</a>
+    <a>Contact: deepspace9ix@gmail.com</a>
+  </div>
+  <script>
+    document.onload = function(){};
 
-<div class="header" style="vertical-align: middle;" height: "100%" width: "100%">
-  <strong><a id="update">Last updated: 404</a></strong>
-  <a class="logo">DeepSpace9</a>
-  <a>Contact: deepspace9ix@gmail.com</a>
-</div>
-<script>
-  document.onload = function(){};
-  
-  let newString = "Last updated: ";
+    let newString = "Last updated: ";
 
-  function getUpdateDate() {
-    let stop = 0;
-    var responseReceived = this.responseText;
-    let i = responseReceived.indexOf("date\":")
-    for (let e = i+10; e<i+40; e++) {
-      if (stop == 0 && responseReceived[e] != "Z") {
-        newString = newString+responseReceived[e];
-      } else {
-        stop = 1;
+    function getUpdateDate() {
+      let stop = 0;
+      var responseReceived = this.responseText;
+      let i = responseReceived.indexOf("date\":")
+      for (let e = i+10; e<i+40; e++) {
+        if (stop == 0 && responseReceived[e] != "Z") {
+          newString = newString+responseReceived[e];
+        } else {
+          stop = 1;
+        };
       };
+
+      newString = newString.replace("T", " ")
+      document.getElementById("update").innerHTML = newString + " (GMT)"; 
     };
-    
-    newString = newString.replace("T", " ")
-    document.getElementById("update").innerHTML = newString + " (GMT)"; 
-  };
-  
-  var request = new XMLHttpRequest();
-  request.onload = getUpdateDate;
-  request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits', true);
-  request.send();
-</script>
+
+    var request = new XMLHttpRequest();
+    request.onload = getUpdateDate;
+    request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits', true);
+    request.send();
+  </script>
 </body>
 </html>
