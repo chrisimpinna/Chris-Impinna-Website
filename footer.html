@@ -58,11 +58,31 @@ body, html {
 </div>
 <script>
   document.onload = function(){};
-  
+  let newString = "";
   function getUpdateDate() {
     var responseReceived = this.responseText;
+    for (let i=0; i<responseReceived.length; i++){
+      if (responseReceived[i] == "d"){
+        if (responseReceived[i+1] == "a"){
+          if (responseReceived[i+2] == "t"){
+            if (responseReceived[i+3] == "e"){
+              let stop = 0;
+              for (let e=i+8; e<responseReceived.length; e++) {
+                if (responseReceived[e] != "Z" && stop==0){
+                  newString[e-(i+8)] = responseReceived[e];
+                } else {
+                  stop = 1;
+                }
+              }
+              
+            }
+          }
+        }
+      }
+    }
+    document.getElementById("update").innerHTML = newString;
     //console.log(this.responseText);
-    document.getElementById("update").innerHTML = responseReceived;
+ 
   };
   
   var request = new XMLHttpRequest();
