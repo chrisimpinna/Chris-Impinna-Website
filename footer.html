@@ -64,7 +64,7 @@ body, html {
   
   function getUpdateDate() {
     var responseReceived = this.responseText;
-    newString[0] = responseReceived[responseReceived.indexOf("date")];
+    newString[0] = responseReceived[responseReceived.search("date")];
     document.getElementById("update").innerHTML = newString; 
   };
   
