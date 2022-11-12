@@ -64,8 +64,8 @@ body, html {
   function getUpdateDate() {
     let stop = 0;
     var responseReceived = this.responseText;
-    
-    for (let e = responseReceived.indexOf("date\":")+10; e<i+40; e++) {
+    let i = responseReceived.indexOf("date\":")
+    for (let e = i+10; e<i+40; e++) {
       if (stop == 0 && responseReceived[e] != "Z") {
         newString = newString+responseReceived[e];
       } else {
@@ -96,7 +96,7 @@ body, html {
     */
     newString = newString.replace("T", " ")
     //document.getElementById("update").innerHTML = newString + " (GMT)"; 
-    document.getElementById("update").innerHTML = this.responseText; 
+    document.getElementById("update").innerHTML = newString + " (GMT)"; 
   };
   
   var request = new XMLHttpRequest();
