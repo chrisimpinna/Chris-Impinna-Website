@@ -72,7 +72,7 @@ body, html {
                 let stop = 0;
                 for (let e = i+8; e<=responseReceived.length; e++) {
                   if (stop == 0 && responseReceived[i] != 'T') {
-                    newString = newString + responseReceived[i];
+                    newString = responseReceived[i];
                   } else {
                     stop = 1;
                     break;
