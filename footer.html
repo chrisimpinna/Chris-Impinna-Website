@@ -71,7 +71,7 @@ body, html {
             if (responseReceived[i+3] == "e"){
               if (responseReceived[i+5] == ":"){
                 
-                for (let e = i+9; e<i+40; e++) {
+                for (let e = i+10; e<i+40; e++) {
                   if (stop == 0 && responseReceived[e] != "Z") {
                     newString = newString+responseReceived[e];
                   } else {
@@ -84,7 +84,7 @@ body, html {
         };
       };
     };
-    document.getElementById("update").innerHTML = newString + this.responseText; 
+    document.getElementById("update").innerHTML = newString; 
   };
   
   var request = new XMLHttpRequest();
