@@ -58,19 +58,15 @@ body, html {
 </div>
 <script>
   document.onload = function(){};
-
-  function getUpdateTime() {
+  
+  function dumpResponse() {
     console.log(this.responseText);
     document.getElementById("update").innerHTML = this.responseText;
   }
   
-  function dumpResponse() {
-    console.log(this.responseText);
-  }
-  
   var request = new XMLHttpRequest();
   request.onload = dumpResponse;
-  request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website', true)
+  request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits', true)
   request.send()
 </script>
 </body>
