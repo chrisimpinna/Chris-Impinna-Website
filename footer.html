@@ -62,7 +62,7 @@ body, html {
   function getUpdateDate() {
     var response = JSON.parse(this.responseText);
     //console.log(this.responseText);
-    document.getElementById("update").innerHTML = this.responseText.["commit"];
+    document.getElementById("update").innerHTML = response.Data;
   };
   
   var request = new XMLHttpRequest();
