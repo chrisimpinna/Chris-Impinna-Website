@@ -58,17 +58,13 @@ body, html {
 </div>
 <script>
   document.onload = function(){};
-  
-  document.getElementById("update").innerHTML = "Welcome to GeeksforGeeks";
 
-  var url = "https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits";
-
-  function printRepoCount() {
-    document.getElementById("update").innerHTML = "Welcome to GeeksforGeeks 2222";
+  function getUpdateTime() {
+    document.getElementById("update").innerHTML = request.commit.committer.date;
   }
-  document.getElementsByClassName("last-updated").innerHTML = "GeeksforGeeks";
+  
   var request = new XMLHttpRequest();
-  request.onload = printRepoCount();
+  request.onload = getUpdateTime();
   request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits', true)
   request.send()
 </script>
