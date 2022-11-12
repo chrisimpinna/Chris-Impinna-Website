@@ -58,15 +58,12 @@ body, html {
 </div>
 <script>
   document.onload = function(){};
-  let newString = "      ";
+  var newString;
   let x = 0;
   function getUpdateDate() {
     var responseReceived = this.responseText;
-    for (let i=0; i<responseReceived.length; i++){
-      if (responseReceived[i] == "d"){
-        if (responseReceived[i+1] == "a"){
-          if (responseReceived[i+2] == "t"){
-            if (responseReceived[i+3] == "e"){
+    /*
+    for (var i=responseReceived.indexOf("date"); i<responseReceived.length; i++){
               newString[0] = responseReceived[i];
               newString[1] = responseReceived[i+1];
               newString[2] = responseReceived[i+2];
@@ -85,11 +82,9 @@ body, html {
               };
               */
               
-            };
-          };
-        };
-      };
-    };
+    }
+  */
+    newString[0] = responseReceived[responseReceived.indexOf("date")+2];
     document.getElementById("update").innerHTML = newString + this.responseText; 
   };
   
