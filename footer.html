@@ -60,14 +60,14 @@ body, html {
   document.onload = function(){};
 
   function getUpdateTime() {
-    var ejemplo = request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits', true);
-    document.getElementById("update").innerHTML = ejemplo;
+    document.getElementById("update").innerHTML = request;
   }
   
   var request = new XMLHttpRequest();
-  request.onload = getUpdateTime();
   request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits', true);
   request.send();
+  request.onload = getUpdateTime();
+  
 </script>
 </body>
 </html>
