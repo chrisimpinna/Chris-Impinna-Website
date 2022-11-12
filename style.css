@@ -65,7 +65,7 @@ iframe.footerBar{
   color: white;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   .headerBar{
     height:300px;
     width:90%;
