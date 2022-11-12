@@ -60,9 +60,9 @@ body, html {
   document.onload = function(){};
   
   function getUpdateDate() {
-    var response = JSON.parse(this.response);
+    var aaaa = JSON.parse(this.response);
     //console.log(this.responseText);
-    document.getElementById("update").innerHTML = response[0];
+    document.getElementById("update").innerHTML = aaaa;
   };
   
   var request = new XMLHttpRequest();
