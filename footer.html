@@ -59,13 +59,14 @@ body, html {
 <script>
   document.onload = function(){};
   
-  function dumpResponse() {
+  function getUpdateDate() {
+    var response = JSON.parse(this.responseText)
     console.log(this.responseText);
-    document.getElementById("update").innerHTML = this.responseText.date;
+    document.getElementById("update").innerHTML = response.date;
   }
   
   var request = new XMLHttpRequest();
-  request.onload = dumpResponse;
+  request.onload = getUpdateDate;
   request.open('get', 'https://api.github.com/repos/chrisimpinna/DS_IX-Website/commits', true)
   request.send()
 </script>
