@@ -48,8 +48,8 @@ function getArchiveFiles() {
   
   fileName = fileName.replace(/"/g, ",");
   let totalArchive = 0;
-  for (let i = 0; i<=responseReceived.length; i++) {
-    if (responseReceived[i] == ",") {
+  for (let i = 0; i<=fileName; i++) {
+    if (fileName[i] == ",") {
       totalArchive++;
     };
   };
