@@ -54,7 +54,7 @@ function getArchiveFiles() {
     };
   };
   
-  lastIndex = -1;
+  lastIndex = -2;
   
   for (let i = 0; i<=totalArchive; i++){
     if (document.getElementById("archive-table") != null) {
