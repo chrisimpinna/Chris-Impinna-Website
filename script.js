@@ -16,7 +16,7 @@ function getUpdateDate() {
 
   newString = newString.replace("T", " ")
   if (document.getElementById("update") != null) {
-    document.getElementById("update").innerHTML = newString + " (GMT)"; 
+    document.getElementById("update").innerHTML = newString + " (UTC)"; 
   };    
 };
 
@@ -47,26 +47,30 @@ function getArchiveFiles() {
   };
   
   fileName = fileName.replace(/"/g, ",");
-
-  if (document.getElementById("archive-table") != null) {
-    let TR = document.createElement("TR");
-    let TR_Title = document.createElement("TH");
-    TR_Title.innerHTML = "Title";
-    let TR_FileType = document.createElement("TH");
-    TR_FileType.innerHTML = "Cheeseburger";
-    let TR_Date = document.createElement("TH");
-    TR_Date.innerHTML = "1/1/1";
-
-    // Append the element to the parent element
-    document.querySelector('#archive-table tbody').append(TR);
-    TR.append(TR_Title);
-    TR.append(TR_FileType);
-    TR.append(TR_Date);
-  };   
+  let totalArchive = 0;
+  for (let i = 0; i<=responseReceived.length; i++) {
+    if (responseReceived[i] == ",") {
+      totalArchive++;
+    };
+  };
   
-  if (document.getElementById("archive-title") != null) {
-    document.getElementById("archive-title").innerHTML = fileName; 
-  };    
+  for (let i = 0; i<=totalArchive; i++){
+    if (document.getElementById("archive-table") != null) {
+      let TR = document.createElement("TR");
+      let TR_Title = document.createElement("TH");
+      TR_Title.innerHTML = "Title";
+      let TR_FileType = document.createElement("TH");
+      TR_FileType.innerHTML = "Cheeseburger";
+      let TR_Date = document.createElement("TH");
+      TR_Date.innerHTML = "1/1/1";
+
+      // Append the element to the parent element
+      document.querySelector('#archive-table tbody').append(TR);
+      TR.append(TR_Title);
+      TR.append(TR_FileType);
+      TR.append(TR_Date);
+    };   
+  };
 };
  
 //API REQUEST FOR GETTING UPDATE DATE
