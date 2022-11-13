@@ -54,7 +54,8 @@ function getArchiveFiles() {
     };
   };
   
-  lastIndex = 0;
+  let lastIndex = 0;
+  
   for (let i = 0; i<=totalArchive; i++){
     if (document.getElementById("archive-table") != null) {
       let TR = document.createElement("TR");
@@ -66,9 +67,11 @@ function getArchiveFiles() {
       
       let newString = "";
       let stop = 0;
+
       for (let x = lastIndex; x<=fileName.length; x++) {
         if (fileName[x] != "," && stop == 0) {
           newString = newString + fileName[x]
+          lastIndex = x;
         } else {
           stop = 1;
         };
