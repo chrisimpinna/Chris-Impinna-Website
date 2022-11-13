@@ -56,7 +56,7 @@ function getArchiveFiles() {
   
   lastIndex = -2;
   
-  for (let i = 0; i<=totalArchive; i++){
+  for (let i = 0; i<=totalArchive-1; i++){
     if (document.getElementById("archive-table") != null) {
       let TR = document.createElement("TR");
       let TR_Title = document.createElement("TH");
