@@ -54,16 +54,28 @@ function getArchiveFiles() {
     };
   };
   
+  lastIndex = 0;
   for (let i = 0; i<=totalArchive; i++){
     if (document.getElementById("archive-table") != null) {
       let TR = document.createElement("TR");
       let TR_Title = document.createElement("TH");
-      TR_Title.innerHTML = "Title";
       let TR_FileType = document.createElement("TH");
       TR_FileType.innerHTML = "File Type";
       let TR_Date = document.createElement("TH");
       TR_Date.innerHTML = "1/1/1";
-
+      
+      let newString = "";
+      let stop = 0;
+      for (let x = totalArchive.indexOf("path\":", lastIndex); x<=totalArchive.length; x++) {
+        if (totalArchive[x] != "," && stop == 0) {\
+          newString = newString + totalArchive[x]
+        } else {
+          stop = 1;
+        };
+      };
+        
+      TR_Title.innerHTML = newString;
+      
       // Append the element to the parent element
       document.querySelector('#archive-table tbody').append(TR);
       TR.append(TR_Title);
