@@ -75,11 +75,10 @@ function getArchiveFiles() {
           stop = 1;
         };
       };
-      let fileExtension = newString.slice(newString.indexOf("."), newString.length);
       let newStringFileRemoved = newString.slice(newString.length, newString.indexOf("."));
       TR_Title_Link.innerHTML = newStringFileRemoved;
       TR_Title_Link.href = "/archive/" + newString;
-      TR_FileType.innerHtml = fileExtension;
+      TR_FileType.innerHTML = newString.slice(newString.indexOf("."), newString.length);
       // Append the element to the parent element
       document.querySelector('#archive-table tbody').append(TR);
       TR.append(TR_Title);
