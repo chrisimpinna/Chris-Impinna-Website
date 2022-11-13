@@ -66,7 +66,7 @@ function getArchiveFiles() {
       
       let newString = "";
       let stop = 0;
-      for (let x = fileName.indexOf(",", lastIndex); x<=fileName.length; x++) {
+      for (let x = lastIndex; x<=fileName.length; x++) {
         if (fileName[x] != "," && stop == 0) {
           newString = newString + fileName[x]
         } else {
