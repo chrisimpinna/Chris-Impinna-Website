@@ -75,7 +75,7 @@ function getArchiveFiles() {
           stop = 1;
         };
       };
-      let newStringFileRemoved = newString.slice(newString.indexOf(".", newString.length));
+      let newStringFileRemoved = newString.slice(newString.indexOf("."), newString.length);
       TR_Title_Link.innerHTML = newStringFileRemoved;
       TR_Title_Link.href = "/archive/" + newString;
       // Append the element to the parent element
