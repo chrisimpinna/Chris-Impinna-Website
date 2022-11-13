@@ -60,7 +60,7 @@ function getArchiveFiles() {
       let TR_Title = document.createElement("TH");
       TR_Title.innerHTML = "Title";
       let TR_FileType = document.createElement("TH");
-      TR_FileType.innerHTML = "Cheeseburger";
+      TR_FileType.innerHTML = "File Type";
       let TR_Date = document.createElement("TH");
       TR_Date.innerHTML = "1/1/1";
 
