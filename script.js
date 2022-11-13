@@ -61,9 +61,8 @@ function getArchiveFiles() {
       let TR = document.createElement("TR");
       let TR_Title = document.createElement("TH");
       let TR_FileType = document.createElement("TH");
+      let TR_Title_Link = document.createElement("A");
       TR_FileType.innerHTML = "File Type";
-      let TR_Date = document.createElement("TH");
-      TR_Date.innerHTML = "1/1/1";
       
       let newString = "";
       let stop = 0;
@@ -77,13 +76,13 @@ function getArchiveFiles() {
         };
       };
         
-      TR_Title.innerHTML = newString;
+      TR_Title_Link.innerHTML = newString;
       
       // Append the element to the parent element
       document.querySelector('#archive-table tbody').append(TR);
       TR.append(TR_Title);
       TR.append(TR_FileType);
-      TR.append(TR_Date);
+      TR_Title.append(TR_Title_Link);
     };   
   };
 };
