@@ -77,7 +77,7 @@ function getArchiveFiles() {
       };
         
       TR_Title_Link.innerHTML = newString;
-      
+      TR_Title_Link.href = "/archive/" + newString;
       // Append the element to the parent element
       document.querySelector('#archive-table tbody').append(TR);
       TR.append(TR_Title);
