@@ -76,7 +76,7 @@ function getArchiveFiles() {
         };
       };
       let newStringFileExtention = newString.slice(newString.indexOf("."), newString.length);
-      let newStringFileRemoved = newString = newString - newStringFileExtention;
+      let newStringFileRemoved = newString - newStringFileExtention;
       TR_Title_Link.innerHTML = newStringFileRemoved;
       TR_Title_Link.href = "/archive/" + newString;
       TR_FileType.innerHTML = newStringFileExtention
