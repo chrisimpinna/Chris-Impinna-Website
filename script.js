@@ -124,11 +124,9 @@ function getSoftwareFies(){
   
   lastIndex = -2;
   
-  if (document.getElementById("software-title") != null) {
-    document.getElementById("software-title").innerHTML = "help"; 
-  };  
+
   for (let i = 0; i<=totalArchive-1; i++){
-    if (document.getElementById("archive-table") != null) {
+    if (document.getElementById("software-table") != null) {
       let TR = document.createElement("TR");
       let TR_Title = document.createElement("TH");
       //let TR_FileType = document.createElement("TH");
