@@ -62,6 +62,34 @@ img {
   color: white;
 }
 
+
+.software-table{
+  margin: 0px auto;
+  width: 40%;
+  height: 400px;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: center;
+  align: center;
+  color: white;
+}
+
+.software-table tr:nth-child(odd){
+  background-color: #556b2f;
+}
+
+.software-table tr:nth-child(even) {
+  background-color: #7F9160;
+}
+
+.software-tr-title th{
+  background-color: #303D1A;
+}
+
+.software-table a {
+  color: white;
+}
+
 @media screen and (max-width: 500px) {
   .headerBar{
     height:300px;
