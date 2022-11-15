@@ -124,6 +124,9 @@ function getSoftwareFies(){
   
   lastIndex = -2;
   
+  if (document.getElementById("software-title") != null) {
+    document.getElementById("software-title").innerHTML = "help"; 
+  };  
   for (let i = 0; i<=totalArchive-1; i++){
     if (document.getElementById("archive-table") != null) {
       let TR = document.createElement("TR");
@@ -155,9 +158,7 @@ function getSoftwareFies(){
       TR.append(TR_FileType);
       TR_Title.append(TR_Title_Link);
       
-      if (document.getElementById("software-title") != null) {
-        document.getElementById("software-title").innerHTML = "help"; 
-      };    
+  
     };   
   };
 
