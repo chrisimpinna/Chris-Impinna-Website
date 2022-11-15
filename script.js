@@ -127,8 +127,8 @@ function getSoftwareFies(){
 
   for (let i = 0; i<=totalArchive-1; i++){
     if (document.getElementById("software-table") != null) {
-      let TR = document.createElement("TR");
-      let TR_Title = document.createElement("TH");
+      let TR_Software = document.createElement("TR");
+      let TR_Title_Software = document.createElement("TH");
       //let TR_FileType = document.createElement("TH");
       //let TR_Title_Link = document.createElement("A");
       //TR_FileType.innerHTML = "File Type";
@@ -145,13 +145,13 @@ function getSoftwareFies(){
       };
       //let newStringFileExtention = newString.slice(newString.indexOf("."), newString.length);
       //let newStringFileRemoved = newString.replace(newStringFileExtention, "");
-      TR_Title.innerHTML = newString;
+      TR_Title_Software.innerHTML = newString;
       //TR_Title_Link.innerHTML = newStringFileRemoved;
       //TR_Title_Link.href = "/archive/" + newString;
       //TR_FileType.innerHTML = newStringFileExtention
       // Append the element to the parent element
-      document.querySelector('#software-table tbody').append(TR);
-      TR.append(TR_Title);
+      document.querySelector('#software-table tbody').append(TR_Software);
+      TR_Software.append(TR_Title_Software);
       //TR.append(TR_FileType);
       //TR_Title.append(TR_Title_Link);
       
