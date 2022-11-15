@@ -135,9 +135,6 @@ function getSoftwareFies(){
       
       let newString = "";
       let stop = 0;
-      if (document.getElementById("software-title") != null) {
-        document.getElementById("software-title").innerHTML = "help"; 
-      };  
       for (let x = lastIndex+2; x<=fileName.length; x++) {
         if (fileName[x] != "," && stop == 0) {
           newString = newString + fileName[x]
