@@ -150,7 +150,7 @@ function getSoftwareFies(){
       //TR_Title_Link.href = "/archive/" + newString;
       //TR_FileType.innerHTML = newStringFileExtention
       // Append the element to the parent element
-      document.querySelector('#archive-table tbody').append(TR);
+      document.querySelector('#software-table tbody').append(TR);
       TR.append(TR_Title);
       TR.append(TR_FileType);
       TR_Title.append(TR_Title_Link);
