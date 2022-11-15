@@ -135,7 +135,9 @@ function getSoftwareFies(){
       
       let newString = "";
       let stop = 0;
-
+      if (document.getElementById("software-title") != null) {
+        document.getElementById("software-title").innerHTML = "help"; 
+      };  
       for (let x = lastIndex+2; x<=fileName.length; x++) {
         if (fileName[x] != "," && stop == 0) {
           newString = newString + fileName[x]
@@ -153,8 +155,8 @@ function getSoftwareFies(){
       // Append the element to the parent element
       document.querySelector('#software-table tbody').append(TR);
       TR.append(TR_Title);
-      TR.append(TR_FileType);
-      TR_Title.append(TR_Title_Link);
+      //TR.append(TR_FileType);
+      //TR_Title.append(TR_Title_Link);
       
   
     };   
