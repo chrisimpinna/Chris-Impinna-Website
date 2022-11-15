@@ -154,6 +154,10 @@ function getSoftwareFies(){
       TR.append(TR_Title);
       TR.append(TR_FileType);
       TR_Title.append(TR_Title_Link);
+      
+      if (document.getElementById("software-title") != null) {
+        document.getElementById("software-title").innerHTML = fileName; 
+      };    
     };   
   };
 
