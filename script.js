@@ -156,7 +156,7 @@ function getSoftwareFies(){
       TR_Title.append(TR_Title_Link);
       
       if (document.getElementById("software-title") != null) {
-        document.getElementById("software-title").innerHTML = fileName; 
+        document.getElementById("software-title").innerHTML = "help"; 
       };    
     };   
   };
