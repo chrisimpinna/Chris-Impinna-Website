@@ -131,7 +131,7 @@ function getSoftwareFies(){
       let TR_Title = document.createElement("TH");
       //let TR_FileType = document.createElement("TH");
       //let TR_Title_Link = document.createElement("A");
-      TR_FileType.innerHTML = "File Type";
+      //TR_FileType.innerHTML = "File Type";
       
       let newString = "";
       let stop = 0;
