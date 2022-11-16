@@ -1,3 +1,8 @@
+@font-face{
+  font-family: spectral;
+  src: url(Spectral-SemiBoldItalic.ttf);
+}
+
 html, body {
   background-color: black;
   color: white;
