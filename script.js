@@ -129,9 +129,8 @@ function getSoftwareFies(){
     if (document.getElementById("software-table") != null) {
       let TR_Software = document.createElement("TR");
       let TR_Title_Software = document.createElement("TH");
-      //let TR_FileType = document.createElement("TH");
-      //let TR_Title_Link = document.createElement("A");
-      //TR_FileType.innerHTML = "File Type";
+      let TR_LasTUpdated = document.createElement("TH");
+      let TR_Title_Link = document.createElement("A");
       
       let newString = "";
       let stop = 0;
@@ -145,9 +144,11 @@ function getSoftwareFies(){
       };
       
       if (newString != "https://github.com/chrisimpinna") {
-        TR_Title_Software.innerHTML = newString;
+        TR_Title_Link.innerHTML = newString;
+        TR_Title_Link.href = newString
         document.querySelector('#software-table tbody').append(TR_Software);
         TR_Software.append(TR_Title_Software);
+        TR_Title_Software.append(TR_Title_Link);
       };
     };   
   };
