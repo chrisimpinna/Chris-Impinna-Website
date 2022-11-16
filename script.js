@@ -100,8 +100,8 @@ function getSoftwareFies(){
   for (let i = 0; i<=100; i++){
     let stop = 0;
     
-    if (responseReceived.indexOf("html_url\":", lastIndex) != -1 && superStop == 0) {
-      for (let x = responseReceived.indexOf("html_url\":", lastIndex-2)+8; x<=responseReceived.length; x++) {
+    if (responseReceived.indexOf("html_url\": \"", lastIndex) != -1 && superStop == 0) {
+      for (let x = responseReceived.indexOf("html_url\": \"", lastIndex)+8; x<=responseReceived.length; x++) {
         if (responseReceived[x] != "," && stop==0) {
           fileName = fileName + responseReceived[x];
           lastIndex = x
@@ -145,7 +145,7 @@ function getSoftwareFies(){
       };
       //let newStringFileExtention = newString.slice(newString.indexOf("."), newString.length);
       //let newStringFileRemoved = newString.replace(newStringFileExtention, "");
-      TR_Title_Software.innerHTML = responseReceived;
+      TR_Title_Software.innerHTML = fileName;
       //TR_Title_Link.innerHTML = newStringFileRemoved;
       //TR_Title_Link.href = "/archive/" + newString;
       //TR_FileType.innerHTML = newStringFileExtention
