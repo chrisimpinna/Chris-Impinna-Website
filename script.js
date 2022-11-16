@@ -145,7 +145,7 @@ function getSoftwareFies(){
       };
       //let newStringFileExtention = newString.slice(newString.indexOf("."), newString.length);
       //let newStringFileRemoved = newString.replace(newStringFileExtention, "");
-      TR_Title_Software.innerHTML = fileName;
+      TR_Title_Software.innerHTML = responseReceived;
       //TR_Title_Link.innerHTML = newStringFileRemoved;
       //TR_Title_Link.href = "/archive/" + newString;
       //TR_FileType.innerHTML = newStringFileExtention
