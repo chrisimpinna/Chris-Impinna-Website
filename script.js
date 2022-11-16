@@ -150,7 +150,7 @@ function getSoftwareFies(){
         document.querySelector('#software-table tbody').append(TR_Software);
         TR_Software.append(TR_Title_Software);
         TR_Title_Software.append(TR_Title_Link);
-        TR_LastUpdated.append(TR_Software);
+        TR_LastUpdated.append(TR_Title_Software);
       };
     };   
   };
