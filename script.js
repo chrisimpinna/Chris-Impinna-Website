@@ -143,22 +143,14 @@ function getSoftwareFies(){
           stop = 1;
         };
       };
-      //let newStringFileExtention = newString.slice(newString.indexOf("."), newString.length);
-      //let newStringFileRemoved = newString.replace(newStringFileExtention, "");
-      TR_Title_Software.innerHTML = newString;
-      //TR_Title_Link.innerHTML = newStringFileRemoved;
-      //TR_Title_Link.href = "/archive/" + newString;
-      //TR_FileType.innerHTML = newStringFileExtention
-      // Append the element to the parent element
-      document.querySelector('#software-table tbody').append(TR_Software);
-      TR_Software.append(TR_Title_Software);
-      //TR.append(TR_FileType);
-      //TR_Title.append(TR_Title_Link);
       
-  
+      if (newString != "https://github.com/chrisimpinna") {
+        TR_Title_Software.innerHTML = newString;
+        document.querySelector('#software-table tbody').append(TR_Software);
+        TR_Software.append(TR_Title_Software);
+      };
     };   
   };
-
 };
  
 //API REQUEST FOR GETTING UPDATE DATE
