@@ -11,6 +11,7 @@ img {
 }
 
 .headerBar{
+  border-radius:10px;
   height:60px;
   width:90%;
   overflow: hidden;
@@ -20,7 +21,6 @@ img {
   bottom: 0;
   left: 0;
   right:0;
-  border:10px;
 }
 
 .footerBar{
