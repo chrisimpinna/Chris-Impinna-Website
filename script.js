@@ -129,7 +129,7 @@ function getSoftwareFies(){
     if (document.getElementById("software-table") != null) {
       let TR_Software = document.createElement("TR");
       let TR_Title_Software = document.createElement("TH");
-      let TR_LasTUpdated = document.createElement("TH");
+      let TR_LastUpdated = document.createElement("TH");
       let TR_Title_Link = document.createElement("A");
       
       let newString = "";
@@ -146,9 +146,11 @@ function getSoftwareFies(){
       if (newString != "https://github.com/chrisimpinna") {
         TR_Title_Link.innerHTML = newString;
         TR_Title_Link.href = newString
+        TR_LastUpdated.innerHTML = "hello";
         document.querySelector('#software-table tbody').append(TR_Software);
         TR_Software.append(TR_Title_Software);
         TR_Title_Software.append(TR_Title_Link);
+        TR_LastUpdated.append(TR_Software);
       };
     };   
   };
