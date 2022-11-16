@@ -101,7 +101,7 @@ function getSoftwareFies(){
     let stop = 0;
     
     if (responseReceived.indexOf("html_url\": \"", lastIndex) != -1 && superStop == 0) {
-      for (let x = responseReceived.indexOf("html_url\": \"", lastIndex-2)+11; x<=responseReceived.length; x++) {
+      for (let x = responseReceived.indexOf("html_url\": \"", lastIndex-2)+12; x<=responseReceived.length; x++) {
         if (responseReceived[x] != "," && stop==0) {
           fileName = fileName + responseReceived[x];
           lastIndex = x
