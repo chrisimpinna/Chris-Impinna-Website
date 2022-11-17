@@ -16,7 +16,6 @@ img {
 }
 
 iframe{
-  display: block;
   position: sticky;
   position: -webkit-sticky;
   width:90%; 
