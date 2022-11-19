@@ -14,11 +14,13 @@ img {
   position: sticky;
   position: -webkit-sticky;
   width:90%; 
-  height:70px; 
+  height:10%;   
+  border:none; 
+  border-radius:30px;
   margin:0; 
   padding:0; 
   overflow:hidden; 
-  z-index:999999;
+  z-index:10;
 }
 
 .footerBar{
