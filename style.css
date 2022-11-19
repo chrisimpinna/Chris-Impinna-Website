@@ -15,26 +15,22 @@ img {
   border-radius: 20px;
 }
 
-iframe{
+.headerBar{
   position: sticky;
   position: -webkit-sticky;
   width:90%; 
   height:70px; 
   border:none; 
+  border-radius:30px;
   margin:0; 
   padding:0; 
   overflow:hidden; 
   z-index:999999;
 }
-.headerBar{
-  border-radius:30px;
-}
 
 .footerBar{
   margin:0;
   overflow: hidden;
-  position: sticky;
-  position: -webkit-sticky;
   bottom: 0;
   left: 0;
   right:0;
@@ -95,19 +91,4 @@ iframe{
 
 .software-table a {
   color: white;
-}
-
-@media screen and (max-width: 500px) {
-  .headerBar{
-    height:300px;
-    width:90%;
-    overflow: hidden;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right:0;
-    border:0;
-  }
 }
