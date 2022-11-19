@@ -10,14 +10,17 @@ img {
   border-radius: 20px;
 }
 
+.headerBar{
+  border:0px; 
+  border-radius: 30px;
+}
+
 iframe.headerBar{
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   width:90%; 
-  height:60px;   
-  border:0px; 
-  border-radius: 30px;
+  height:60px;  
   margin:0; 
   padding:0; 
   overflow:hidden; 
