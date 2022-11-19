@@ -23,7 +23,7 @@ img {
   z-index:10;
 }
 
-.headerBar iFrame{
+.headerBar iframe{
   position: sticky;
   position: -webkit-sticky;
 }
