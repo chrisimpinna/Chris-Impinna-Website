@@ -17,6 +17,7 @@ img {
 iframe.headerBar{
   position: sticky;
   position: -webkit-sticky;
+  border:none;
   top: 0;
   width:90%; 
   height:45px;  
