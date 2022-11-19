@@ -10,23 +10,17 @@ img {
   border-radius: 20px;
 }
 
-.headerBar{
+iframe.headerBar{
   position: sticky;
   position: -webkit-sticky;
   width:90%; 
-  height:10%;   
+  height:60px;   
   border:none; 
   border-radius:30px;
   margin:0; 
   padding:0; 
   overflow:hidden; 
   z-index:10;
-}
-
-iframe.headerBar{
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
 }
 
 .footerBar{
