@@ -13,7 +13,19 @@ img {
 .headerBar{
   position: sticky;
   position: -webkit-sticky;
+  width:90%; 
+  height:10%;   
+  border:none; 
+  border-radius:30px;
+  margin:0; 
+  padding:0; 
+  overflow:hidden; 
+  z-index:10;
+}
 
+.headerBar iFrame{
+  position: sticky;
+  position: -webkit-sticky;
 }
 
 .footerBar{
