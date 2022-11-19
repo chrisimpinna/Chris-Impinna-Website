@@ -16,8 +16,8 @@ iframe.headerBar{
   top: 0;
   width:90%; 
   height:60px;   
-  border:none; 
-  border-radius:100px;
+  border:0px; 
+  border-radius: 30px;
   margin:0; 
   padding:0; 
   overflow:hidden; 
