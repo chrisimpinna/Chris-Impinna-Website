@@ -10,16 +10,12 @@ img {
   border-radius: 20px;
 }
 
-.headerBar{
-  border-radius: 20px;
-}
-
 iframe.headerBar{
   position: sticky;
   position: -webkit-sticky;
   border:none;
   top: 10px;
-  width:90%; 
+  width:1003%; 
   height:45px;  
   margin:0; 
   padding:0; 
@@ -33,61 +29,6 @@ iframe.headerBar{
   bottom: 0;
   left: 0;
   right:0;
-  width:90%;
+  width:100%;
   border:0;
-}
-
-.archive-table{
-  margin: 0px auto;
-  width: 40%;
-  height: 400px;
-  border-collapse: collapse;
-  text-align: center;
-  vertical-align: center;
-  align: center;
-  color: white;
-}
-
-.archive-table tr:nth-child(odd){
-  background-color: #556b2f;
-}
-
-.archive-table tr:nth-child(even) {
-  background-color: #7F9160;
-}
-
-.archive-tr-title th{
-  background-color: #303D1A;
-}
-
-.archive-table a {
-  color: white;
-}
-
-
-.software-table{
-  margin: 0px auto;
-  width: 40%;
-  height: 400px;
-  border-collapse: collapse;
-  text-align: center;
-  vertical-align: center;
-  align: center;
-  color: white;
-}
-
-.software-table tr:nth-child(odd){
-  background-color: #556b2f;
-}
-
-.software-table tr:nth-child(even) {
-  background-color: #7F9160;
-}
-
-.software-tr-title th{
-  background-color: #303D1A;
-}
-
-.software-table a {
-  color: white;
 }
