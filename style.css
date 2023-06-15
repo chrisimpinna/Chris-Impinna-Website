@@ -11,24 +11,21 @@ img {
 }
 
 iframe.headerBar{
-  position: sticky;
-  position: -webkit-sticky;
-  border:none;
-  top: 10px;
-  width:1003%; 
-  height:45px;  
   margin:0; 
   padding:0; 
+  position: sticky;
+  position: -webkit-sticky;
+  border:0;
+  width:200%; 
+  height:45px;
   overflow:hidden; 
   z-index:10;
 }
 
-.footerBar{
-  margin:0;
+iframe.footerBar{
+  margin:0; 
+  padding:0; 
   overflow: hidden;
-  bottom: 0;
-  left: 0;
-  right:0;
-  width:100%;
+  width:200%;
   border:0;
 }
